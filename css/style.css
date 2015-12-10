@@ -37,6 +37,7 @@ li:hover {
 	cursor: pointer;
 }
 
+
 /*---------------------*/
 /* NAVIGATION SECTION */
 /*---------------------*/
@@ -46,6 +47,7 @@ li:hover {
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
+	border-bottom: 1px solid #838994;
 }
 
 .top.navigation > .content {
@@ -89,13 +91,13 @@ li:hover {
 .introduction {
 	background: url(img/first-background%20copy.jpg) no-repeat center bottom fixed;
 	background-size: cover;
-	height: 45.938rem;
+	height: 42.5rem;
 	overflow: auto;
 /*Can't you just use padding-top instead of margin-top so overflow isn't required?*/
 }
 
 .introduction .content .center-content {
-	margin-top: 13.5em;
+	margin-top: 15.5em;
 	overflow: auto;
 }
 
@@ -136,6 +138,10 @@ li:hover {
 /* THREE ICONS SECTION */
 /*---------------------*/
 
+.three-icons {
+	height: 30em;
+}
+
 .three-icons .content .center-content > h2 {
 	margin: 7rem 0 3.5rem;
 	font-size: 2.5rem;
@@ -162,7 +168,50 @@ li:hover {
 	height: 8.5rem;
 } 
 
+/*---------------------*/
+/* FOOTER SECTION */
+/*---------------------*/
 
+.social {
+	padding-bottom: 7rem;
+}
 
+hr {
+	border-top: 1px solid #f0f0f0;	
+}
 
+.social .icons > li {
+	display: inline-block;
+	border-radius: 50%;
+	margin: .35rem;
+	border: 1px solid rgba(150, 150, 150, 0.3);
+	padding: 16px;
+}
+
+.social .icons li:first-of-type {
+	color: #416cfa;
+}
+
+.social .icons li:nth-child(2) {
+	color: #092b9b;
+	padding: 16px 20px;
+}
+
+.social .icons li:nth-child(3) {
+	color: #5b73c4;
+}
+
+.social h3 {
+	color: #000;
+	font-size: 1.rem;
+	margin-top: 20px;
+	padding: 0 0 0 40px;
+}
+
+.social h4 {
+	color: #838994;
+	font-size: .9rem;
+	font-weight: 300;
+	padding: 0 0 0 40px;
+}
 
