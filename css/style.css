@@ -32,7 +32,8 @@ li {
 	text-align: center;
 }
 
-*:hover {
+button:hover,
+li:hover {
 	cursor: pointer;
 }
 
@@ -42,6 +43,9 @@ li {
 
 .top-navigation {
 	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
 }
 
 .top.navigation > .content {
@@ -95,11 +99,11 @@ li {
 	overflow: auto;
 }
 
-.introduction .content .center-content > h1 {
+.introduction .content .center-content h1 {
 	font-size: 3rem;
 }
 
-.introduction .content .center-content > h3 {
+.introduction .content .center-content h3 {
 	font-size: 1.5rem;
 }
 
@@ -128,8 +132,35 @@ li {
 	transition: background-color .65s;
 }
 
+/*---------------------*/
+/* THREE ICONS SECTION */
+/*---------------------*/
 
+.three-icons .content .center-content > h2 {
+	margin: 7rem 0 3.5rem;
+	font-size: 2.5rem;
+}
 
+.three-icons .content .center-content .devices > h3 {
+	margin: 3.5rem 0;
+	font-size: 1.5rem;
+}
+
+.three-icons .content .center-content > h2,
+.three-icons .content .center-content .devices > h3 {
+	color: #000;
+}
+
+.three-icons .content .center-content > .devices {
+	width: 33.33%;
+	float: left;
+	display: inline-block;
+	height: 4rem;
+}
+
+.three-icons .content .center-content .devices > img {
+	height: 8.5rem;
+} 
 
 
 
