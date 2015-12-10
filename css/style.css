@@ -7,16 +7,33 @@ html {
 	box-sizing: inherit;
 }
 
-body {
+body, h1, h2, h3 {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	color: #838994;
+	font-weight: 300;
 	letter-spacing: 0.03em;
 	-webkit-font-smoothing: antialised;
+	padding: 0;
+	margin: 0;
 }
 
 li {
 	list-style: none;
+}
+
+.content {
+	width: 80%;
+	margin: auto;
+	min-width: 768px;
+}
+
+.center-content {
+	text-align: center;
+}
+
+*:hover {
+	cursor: pointer;
 }
 
 /*---------------------*/
@@ -30,31 +47,28 @@ li {
 .top.navigation > .content {
 	width: 970px;
 	height: 70px;
-	margin: 0 auto;
+	margin: auto;
 }
 
-.top-navigation .content > img {
+.top-navigation .content img {
 	margin-top: 15px;
 	padding: 0 15px;
 	width: 46px;
 }
 
-
-*.top-navigation .content > ul {
-	width: 80%;
+*.top-navigation .content ul {
 	display: inline-block;
 	text-align: right;
-	transform: translateY(-100%)
+	transform: translateY(-100%);
 }
 
-.top-navigation .content .links > li {
+.top-navigation .content .links li {
 	display: inline-block;
 	padding: 0 15px;
 }
 
 .top-navigation .content .links > li:hover {
 	color: aqua;
-	cursor: pointer;
 	transition: color .65s;
 	transform: scale(1.1)
 }
@@ -63,4 +77,61 @@ li {
 	color: #4c5058;
 	font-weight: 500;
 }
+
+/*---------------------*/
+/* INTRODUCTION SECTION */
+/*---------------------*/
+
+.introduction {
+	background: url(img/first-background%20copy.jpg) no-repeat center bottom fixed;
+	background-size: cover;
+	height: 45.938rem;
+	overflow: auto;
+/*Can't you just use padding-top instead of margin-top so overflow isn't required?*/
+}
+
+.introduction .content .center-content {
+	margin-top: 13.5em;
+	overflow: auto;
+}
+
+.introduction .content .center-content > h1 {
+	font-size: 3rem;
+}
+
+.introduction .content .center-content > h3 {
+	font-size: 1.5rem;
+}
+
+.introduction .content .center-content > h1,
+.introduction .content .center-content > h3,
+.introduction .content .center-content .big-button {
+	margin: .65rem 0;
+	color: #fff;
+}
+
+.introduction .content .center-content .big-button > button {
+	padding: 16px 26px;
+	width: 12rem;
+	margin: 1.5rem;
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.2rem;
+	background-color: #ed860e;
+	border-radius: 4px;
+	border-style: none;
+	line-height: 1.33rem;
+}
+
+.introduction .content .center-content .big-button > button:hover {
+	background-color: #f7ac56;
+	transition: background-color .65s;
+}
+
+
+
+
+
+
+
 
